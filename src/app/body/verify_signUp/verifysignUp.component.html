@@ -1,0 +1,26 @@
+<br>
+<p class="text-success center mat-h1"><b>Verification Code</b></p>
+<div class="signUp-box">
+
+    <form [formGroup] = "verifyForm" (ngSubmit) = "verifyForm.valid  && onverifySubmit()" novalidate class="form_signup">
+      <mat-form-field appearance="outline" class="example-full-width">
+        <mat-label>EnterCode</mat-label>
+        <input  class="text_color"
+                name="code"
+                type="text"
+                matInput
+                formControlName = "code"
+                />
+                <mat-error >Please fill in this field</mat-error>
+      </mat-form-field>
+      <div>
+        <button type="submit" class="btn btn-success btn-sign" >Submit</button>
+      </div>
+
+    </form>
+
+</div>
+<div class="center text-success mat-body-strong">Don't get code??? <span (click)="resendCode()" class="resendCode btn btn-sm">Send again</span></div>
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+

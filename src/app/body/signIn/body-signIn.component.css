@@ -1,0 +1,54 @@
+.spacing{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center{
+  text-align: center;
+}
+.example-form {
+  min-width: 200px;
+  max-width: 450px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+.signUp-box{
+  min-width: 200px;
+  max-width: 450px;
+  width: 100%;
+  border: 1px solid #5cb85c;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.form_signup{
+  padding: 20px;
+}
+
+.btn-sign{
+  width: 100%;
+}
+/* mat-input focused color */
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  color: #5cb85c!important;
+}
+/* mat-input error outline color */
+::ng-deep .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick{
+    color: red!important;
+    opacity: 0.6!important;
+}
+/* mat-input carent color */
+::ng-deep .mat-input-element {
+  caret-color:  #5cb85c!important;
+}
+/* mat-label normal state style */
+::ng-deep .mat-form-field-label {
+    color:  #5cb85c!important;
+}
+.text_color{
+  opacity: 0.8;
+}

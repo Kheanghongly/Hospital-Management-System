@@ -1,0 +1,12 @@
+<mat-nav-list [disableRipple]="true">
+  <a
+    mat-list-item
+    class="nav-link"
+    *ngFor="let menuItem of menuItems"
+    [routerLink]="menuItem.path"
+    routerLinkActive="active"
+  >
+    <mat-icon>{{ menuItem.icon }}</mat-icon>
+
+  </a>
+</mat-nav-list>

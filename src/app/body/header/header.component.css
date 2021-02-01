@@ -1,0 +1,30 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.nav_bar{
+  background-color: #5cb85c;
+  padding: 40px;
+}
+.H_nav{
+  font-size: 40px;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.text_nav{
+  font-size: 20px;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sidebar {
+  width: 100px;
+  height:100%;
+  background-color: lightgray;
+  float: left;
+}
+.side-content {
+  width: calc(100% - 100px);
+  position: absolute;
+  left: 100px;
+  float: left;
+}

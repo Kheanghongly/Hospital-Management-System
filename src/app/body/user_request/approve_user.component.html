@@ -1,0 +1,18 @@
+<h1 mat-dialog-title >Approve This User</h1>
+<hr>
+<div mat-dialog-content>
+  <div><span class="color"><b>Email:</b></span>&nbsp;&nbsp;&nbsp;<span class="text_color">{{data.email}}</span></div>
+  <div><span class="color"><b>Name:</b></span>&nbsp;&nbsp;<span class="text_color">{{data.name}}</span></div>
+  <div><span class="color"><b>Role:</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text_color">{{data.role}}</span></div>
+</div>
+<br>
+<form (ngSubmit) = "ApproveUserSubmit()" >
+  <div class="row" >
+    <div class="col-md-6">
+      <button type="button" (click)="onNoClick()" class="btn btn-secondary btn-sign">Cancel</button>
+    </div>
+    <div class="col-md-6">
+      <button type="submit"  class="btn btn-success btn-sign" >Approve Now</button>
+    </div>
+  </div>
+</form>

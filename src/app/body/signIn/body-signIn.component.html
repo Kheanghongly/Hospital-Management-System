@@ -1,0 +1,36 @@
+<div class="spacing">
+<p class="text-success center mat-h1"><b>SignIn</b></p>
+<p class="text-success center mat-body-strong">Please fill in this form to Login</p>
+<div class="signUp-box">
+    <form  [formGroup]="registerForm" (ngSubmit) = "registerForm.valid  && onregisterSubmit()" novalidate class="form_signup">
+      <mat-form-field appearance="outline" class="example-full-width" >
+        <mat-label>Email</mat-label>
+        <input  class="text_color"
+                matInput
+                type="email"
+                formControlName="email"
+                />
+                <mat-error>Email invalid</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="example-full-width"  >
+        <mat-label>Password</mat-label>
+        <input  class="text_color"
+                matInput
+                type="password"
+                formControlName="password"
+                />
+                <mat-error>At least 8 characters, Lowercase Uppercase letters, Numbers, Special characters</mat-error>
+      </mat-form-field>
+
+      <div>
+        <button type="submit" class="btn btn-success btn-sign" >Login</button>
+      </div>
+
+    </form>
+
+</div>
+<br>
+<div class="center text-success mat-body-strong">Don't have any account??? <a routerLink="/signup">SignUp</a></div>
+</div>
+
+

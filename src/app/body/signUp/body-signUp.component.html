@@ -1,0 +1,72 @@
+<div *ngIf="isSignUpSuccess">
+  <br>
+<p class="text-success center mat-h1"><b>SignUp</b></p>
+<p class="text-success center mat-body-strong">Please fill in this form to Register</p>
+<div class="signUp-box" >
+    <form [formGroup] = "registerForm" (ngSubmit) = "registerForm.valid  && onregisterSubmit()" novalidate class="form_signup">
+      <mat-form-field appearance="outline" class="example-full-width">
+        <mat-label>Name</mat-label>
+        <input  class="text_color"
+                name="name"
+                type="text"
+                matInput
+                formControlName = "name"
+                />
+                <mat-error>Atleast 3 charaters</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input  class="text_color"
+                name = "email"
+                matInput
+                type="email"
+                formControlName = "email"
+
+                />
+                <mat-error>Email invalid</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="example-full-width">
+        <mat-label>Password</mat-label>
+        <input  class="text_color"
+                name = "password"
+                matInput
+                type="password"
+                formControlName = "password"
+
+                />
+                <mat-error>At least 8 characters, Lowercase Uppercase letters, Numbers, Special characters</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="example-full-width">
+        <mat-label>Confirm Password</mat-label>
+        <input  class="text_color"
+                name = "confirm_password"
+                matInput
+                type="password"
+                formControlName = "confirm_password"
+                compare = "password"
+                />
+                <mat-error>Confirm Password invalid</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="example-full-width">
+        <mat-label>Select Role</mat-label>
+        <mat-select  formControlName = "select_role" class="text_color">
+          <mat-option *ngFor="let role of roles" [value]="role.role" class="text_color">
+            {{role.role}}
+          </mat-option>
+        </mat-select>
+        <mat-error>Select your role</mat-error>
+      </mat-form-field>
+        <div>
+          <button type="submit" class="btn btn-success btn-sign">Register</button>
+        </div>
+    </form>
+</div>
+<br>
+<div class="center text-success mat-body-strong">Already have an account??? <a routerLink="/signin">SignIn</a></div>
+<br><br>
+<!-- <div *ngIf="response as value">{{value.UserID}}</div> -->
+</div>
+
+<div *ngIf="!isSignUpSuccess">
+    <verify-signUp [id]="user_id"></verify-signUp>
+</div>

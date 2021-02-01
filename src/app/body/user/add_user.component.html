@@ -1,0 +1,53 @@
+<h1 mat-dialog-title >Add New User</h1>
+<hr>
+  <form [formGroup] = "AddnewUser" (ngSubmit) = "AddnewUser.valid  && onAddnewUserSubmit()" novalidate>
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>Name</mat-label>
+      <input  class="text_color"
+              type="text"
+              matInput
+              formControlName = "name"
+              />
+              <mat-error>Atleast 3 charaters</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input  class="text_color"
+              matInput
+              type="email"
+              formControlName = "email"
+              />
+              <mat-error>Email invalid</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>Password</mat-label>
+      <input  class="text_color"
+              matInput
+              type="password"
+              formControlName = "password"
+              />
+              <mat-error>At least 8 characters, Lowercase Uppercase letters, Numbers, Special characters</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="example-full-width"  >
+      <mat-label>Select Role</mat-label>
+      <mat-select formControlName = "select_role" class="text_color">
+        <mat-option *ngFor="let role of roles" [value]="role.role" class="text_color">
+          {{role.role}}
+        </mat-option>
+      </mat-select>
+      <mat-error >Please select role</mat-error>
+    </mat-form-field>
+
+
+    <div class="row">
+      <div class="col-md-6">
+        <button type="button" (click)="onNoClick()" class="btn btn-secondary btn-sign" cdkFocusInitial>Cancel</button>
+      </div>
+      <div class="col-md-6">
+        <button type="submit"  class="btn btn-success btn-sign" >Add Now</button>
+      </div>
+    </div>
+  </form>
+
+
+

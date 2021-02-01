@@ -1,0 +1,22 @@
+.center{
+  text-align: center;
+}
+
+.example-full-width {
+  width: 100%;
+}
+.btn-sign{
+  width: 100%;
+}
+.color{
+  color: #5cb85c;
+}
+.text_color{
+  opacity: 0.8;
+}
+.mat-dialog-title{
+  opacity: 0.8;
+}
+hr{
+  border-top: 2px solid#5cb85c;
+}

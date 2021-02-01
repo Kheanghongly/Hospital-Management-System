@@ -1,0 +1,47 @@
+table {
+  width: 100%;
+  box-shadow: none;
+  transition: none;
+}
+
+.list_req{
+  font-size: larger;
+  border-top: 1px solid #5cb85c;
+  border-bottom: 1px solid #5cb85c;
+}
+
+.btn-sign{
+  width: 100%;
+}
+.adduser_box{
+  border: 1px solid #DCDCDC;
+  padding: 20px;
+}
+
+.noBreak{
+  margin: 0 auto;
+}
+.Pagination{
+  border: 1px solid #DCDCDC;
+}
+th{
+  background-color: #DCDCDC;
+}
+.Pagination11{
+  border-bottom: 1px solid #DCDCDC;
+  border-left: 1px solid #DCDCDC;
+  border-right: 1px solid #DCDCDC;
+}
+.form-control:focus {
+  border: 2px solid  #5cb85c;
+  box-shadow:  none;}
+
+.material-icons{
+  color: #5cb85c;
+}
+.text_color{
+  opacity: 0.8;
+}
+.delete{
+  color:  #FF4500;
+}

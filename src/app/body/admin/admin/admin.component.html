@@ -1,0 +1,17 @@
+<div id="ae-app">
+  <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+  <mat-sidenav-container>
+    <mat-sidenav
+      #sidenav
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false"
+    >
+      <app-side-nav (sidenavClose)="sidenav.close()"></app-side-nav>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+

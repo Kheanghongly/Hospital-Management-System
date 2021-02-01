@@ -1,0 +1,77 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.nav_bar{
+  background-color: #5cb85c;
+  padding: 40px;
+}
+.H_nav{
+  font-size: 40px;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.text_nav{
+  font-size: 20px;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.center{
+  text-align: center;
+}
+.example-form {
+  min-width: 200px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+.signUp-box{
+  min-width: 200px;
+  max-width: 300px;
+  width: 100%;
+  border: 1px solid #5cb85c;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.form_signup{
+  padding: 20px;
+}
+
+.btn-sign{
+  width: 100%;
+}
+/* mat-input focused color */
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  color: #5cb85c!important;
+}
+/* mat-input error outline color */
+::ng-deep .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick{
+    color: red!important;
+    opacity: 0.6!important;
+}
+/* mat-input carent color */
+::ng-deep .mat-input-element {
+  caret-color:  #5cb85c!important;
+}
+/* mat-label normal state style */
+::ng-deep .mat-form-field-label {
+    color:  #5cb85c!important;
+}
+.text_color{
+  opacity: 0.8;
+}
+.resendCode{
+  color: #0275d8;
+}
+.resendCode:hover{
+  color:  #0275d8;
+  text-decoration:underline;
+}
+.resendCode:active{
+  color:  #0275d8;
+  text-decoration: none;
+}
